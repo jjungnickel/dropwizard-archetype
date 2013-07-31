@@ -19,7 +19,6 @@
     <modules>
         <module>java-simple</module>
         <module>scala-simple</module>
-    <module>wifindserver</module>
   </modules>
 
     <properties>
