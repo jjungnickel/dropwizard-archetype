@@ -3,8 +3,8 @@ package
 
 }
 
-import com.yammer.dropwizard.ScalaService
-import com.yammer.dropwizard.config.Environment
+import com.codahale.dropwizard.ScalaService
+import com.codahale.dropwizard.config.Environment
 
 object $ {
   name

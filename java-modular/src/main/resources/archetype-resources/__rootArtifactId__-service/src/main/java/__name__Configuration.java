@@ -2,7 +2,7 @@ package $
 
 {package};
 
-import com.yammer.dropwizard.config.Configuration;
+import com.codahale.dropwizard.config.Configuration;
 import org.codehaus.jackson.annotate.JsonProperty;
 import org.hibernate.validator.constraints.*;
 import javax.validation.constraints.*;

@@ -1,6 +1,6 @@
 package ${package};
 
-import com.yammer.dropwizard.config.Configuration;
+import com.codahale.dropwizard.Configuration;
 
 public class ${name}Configuration extends Configuration {
 	

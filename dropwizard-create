@@ -4,7 +4,7 @@
 #
 
 # defaults
-DW_VERSION="0.6.1"
+DW_VERSION="0.7.0-SNAPSHOT"
 LANGUAGE="java"
 STYLE="simple"		# simple|modular
 SHADED="false"
@@ -204,5 +204,5 @@ echo "Creating $PACKAGING_TYPE$LANGUAGE project $NAME with root package $PACKAGE
 echo
 
 # create from archetype
-$MAVEN "archetype:generate" "-DinteractiveMode=false" "-DarchetypeGroupId=com.yammer.dropwizard.archetypes" "-DarchetypeArtifactId=$LANGUAGE-$STYLE" "-DarchetypeVersion=$DW_VERSION" "-DgroupId=$GROUP" "-DartifactId=$ARTIFACT" "-Dpackage=$PACKAGE.$ARTIFACT" "-Dname=$NAME" "-Dversion=$VERSION" "-Dshaded=$SHADED" "-Ddescription=$DESCRIPTION"
+$MAVEN "archetype:generate" "-DinteractiveMode=false" "-DarchetypeGroupId=com.codahale.dropwizard.archetypes" "-DarchetypeArtifactId=$LANGUAGE-$STYLE" "-DarchetypeVersion=$DW_VERSION" "-DgroupId=$GROUP" "-DartifactId=$ARTIFACT" "-Dpackage=$PACKAGE.$ARTIFACT" "-Dname=$NAME" "-Dversion=$VERSION" "-Dshaded=$SHADED" "-Ddescription=$DESCRIPTION"
 

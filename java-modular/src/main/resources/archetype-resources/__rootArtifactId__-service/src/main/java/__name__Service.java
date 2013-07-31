@@ -2,8 +2,8 @@ package $
 
 {package};
 
-import com.yammer.dropwizard.Service;
-import com.yammer.dropwizard.config.Environment;
+import com.codahale.dropwizard.Service;
+import com.codahale.dropwizard.config.Environment;
 
 public class $ {
     name
