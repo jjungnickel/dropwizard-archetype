@@ -1,6 +1,6 @@
 package ${package};
 
-import com.codahale.dropwizard.Configuration;
+import io.dropwizard.Configuration;
 
 public class ${name}Configuration extends Configuration {
 	

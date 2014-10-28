@@ -4,7 +4,7 @@
 #
 
 # defaults
-DW_VERSION="0.7.0-SNAPSHOT"
+DW_VERSION="0.7.1"
 LANGUAGE="java"
 STYLE="simple"		# simple|modular
 SHADED="false"
@@ -30,12 +30,6 @@ the ARTIFACT (or NAME, if no ARTIFACT was specified).
 
 When executed inside an existing project, the current project will be 
 transformed to a Dropwizard project.
-
-  -j, --java            Create a Java project. 
-                        Default, may not be used with -s or --scala.
-
-  -s, --scala           Create a Scala project.
-                        May not be used with -j or --java.
 
   --artifact=ARTIFACTID Apply the specified Maven artifact label.
                         Formatted as follows:
@@ -110,12 +104,6 @@ function error()
 while [ $# -gt 0 ]
 do
   case "$1" in
-    "--java" | "-j")
-      LANGUAGE="java"
-      shift;;
-    "--scala" | "-s")
-      LANGUAGE="scala"
-      shift;;
     "--shaded")
       SHADED="true"
       shift;;
@@ -204,5 +192,5 @@ echo "Creating $PACKAGING_TYPE$LANGUAGE project $NAME with root package $PACKAGE
 echo
 
 # create from archetype
-$MAVEN "archetype:generate" "-DinteractiveMode=false" "-DarchetypeGroupId=com.codahale.dropwizard.archetypes" "-DarchetypeArtifactId=$LANGUAGE-$STYLE" "-DarchetypeVersion=$DW_VERSION" "-DgroupId=$GROUP" "-DartifactId=$ARTIFACT" "-Dpackage=$PACKAGE.$ARTIFACT" "-Dname=$NAME" "-Dversion=$VERSION" "-Dshaded=$SHADED" "-Ddescription=$DESCRIPTION"
+$MAVEN "archetype:generate" "-DinteractiveMode=false" "-DarchetypeGroupId=io.dropwizard.archetypes" "-DarchetypeArtifactId=$LANGUAGE-$STYLE" "-DarchetypeVersion=$DW_VERSION" "-DgroupId=$GROUP" "-DartifactId=$ARTIFACT" "-Dpackage=$PACKAGE.$ARTIFACT" "-Dname=$NAME" "-Dversion=$VERSION" "-Dshaded=$SHADED" "-Ddescription=$DESCRIPTION"
 

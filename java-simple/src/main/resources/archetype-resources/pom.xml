@@ -28,28 +28,28 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.codahale.dropwizard</groupId>
+            <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
             <version>\${dropwizard.version}</version>
         </dependency>
         <!-- optional extras, delete if not needed -->
         <dependency>
-            <groupId>com.codahale.dropwizard</groupId>
+            <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-jdbi</artifactId>
             <version>\${dropwizard.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codahale.dropwizard</groupId>
+            <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-auth</artifactId>
             <version>\${dropwizard.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codahale.dropwizard</groupId>
+            <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-views</artifactId>
             <version>\${dropwizard.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.codahale.dropwizard</groupId>
+            <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-migrations</artifactId>
             <version>\${dropwizard.version}</version>
         </dependency>
@@ -84,24 +84,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>repo.codahale.com</id>
-            <url>http://repo.codahale.com/</url>
-        </repository>
-        <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
     <build>
         <plugins>

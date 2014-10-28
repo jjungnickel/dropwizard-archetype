@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.codahale.dropwizard.archetypes</groupId>
         <artifactId>dropwizard-archetypes</artifactId>
-        <version>0.7.0-SNAPSHOT</version>
+        <version>0.7.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -17,7 +17,7 @@
         <dropwizard.version>${project.version}</dropwizard.version>
     </properties>
 
-    <groupId>com.codahale.dropwizard.archetypes</groupId>
+    <groupId>io.dropwizard.archetypes</groupId>
     <artifactId>java-simple</artifactId>
     <packaging>maven-archetype</packaging>
 
