@@ -110,6 +110,7 @@
                             </excludes>
                         </filter>
                     </filters>
+                    <finalName>app</finalName>
                 </configuration>
                 <executions>
                     <execution>

@@ -99,6 +99,14 @@
         <fileSet filtered="true" packaged="false">
             <directory>src/test/resources/fixtures</directory>
         </fileSet>
+
+        <!-- docker descriptor -->
+        <fileSet filtered="false" packaged="false">
+          <directory/>
+          <includes>
+            <include>Dockerfile</include>
+          </includes>
+        </fileSet>
     </fileSets>
 
 </archetype-descriptor>
